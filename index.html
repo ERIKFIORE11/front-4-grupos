@@ -1,0 +1,248 @@
+!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tratamentos capilares</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#ffffff;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+            background:#001aff;
+            color:rgb(247, 255, 8);
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#333333;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:rgb(247, 255, 8);
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .banner{
+            background:url('https://images.adsttc.com/media/images/6013/8f05/f91c/8125/1500/02d2/large_jpg/Roby_Salao_Beleza-3774.jpg?1611894525') center/cover;
+            height:300px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-size:40px;
+            font-weight:bold;
+            text-shadow:2px 2px 5px black;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:30px 0;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#333;
+        }
+
+        .produtos{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.03);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+            object-fit: contain;
+        }
+
+        .card-content{
+            padding:15px;
+            text-align:center;
+        }
+
+        .card-content h3{
+            margin-bottom:10px;
+            color:#444;
+        }
+
+        .preco{
+            color:#ff6600;
+            font-size:20px;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        button{
+            background:#ff914d;
+            color:white;
+            border:none;
+            padding:10px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#ff6600;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>𝓗𝓪𝓲𝓻 𝓢𝓽𝔂𝓵𝓮</h1>
+        <p>produtos e tratamentos profissionoais para o seu cabelo</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">contato</a>
+    </nav>
+
+    <section class="banner" id="inicio">
+        Bem-vindo ao hair style
+    </section>
+
+    <section class="container">
+
+        <h2>Nossos Produtos</h2>
+
+        <div class="produtos" id="produtos">
+
+            <div class="card">
+                <img src="https://bretas.vtexassets.com/arquivos/ids/199642-800-auto?v=638375535060400000&width=800&height=auto&aspect=true" alt="">
+                <div class="card-content">
+                    <h3>kit de Shampoo e condicionador pantene</h3>
+                    <p class="preco">R$ 39,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://epocacosmeticos.vteximg.com.br/arquivos/ids/549224-800-800/elseve-pure-hialuronico-kit-shampoo-condicionador.jpg?v=638193648846170000" alt="">
+                <div class="card-content">
+                    <h3>kit de Shampoo e condicionador elseve</h3>
+                    <p class="preco">R$ 65,50</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.awsli.com.br/2500x2500/1991/1991189/produto/275411918/80341a_8f9d652809834bbd93b5f7521f091a08-mv2-r2nymatcwi.jpg" alt="">
+                <div class="card-content">
+                    <h3>kit shampo condicionador 1L e mascara capilar</h3>
+                    <p class="preco">R$ 69,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://unicpharma.vteximg.com.br/arquivos/ids/168153-292-292/minoxidil_spray_10pcnt_fpreto.jpg?v=638322012247000000" alt="">
+                <div class="card-content">
+                    <h3>minoxidil</h3>
+                    <p class="preco">R$ 59,99</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container" id="servicos">
+        <h2>Nossos tratamentos</h2>
+        <div class="produtos">
+            <div class="card">
+                <img src="https://cdn.awsli.com.br/2500x2500/2258/2258692/produto/141039063/67b1094ae5.jpg" alt="">
+                <div class="card-content">
+                    <h3>terapia capilar</h3>
+                    <p class="preco">R$ 500,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDiCUWo_8ycVp1_l0N5IlHE7BeZoNyyDLQzw&s" alt="">
+                <div class="card-content">
+                    <h3>hidrataçao profunda</h3>
+                    <p class="preco">R$ 200,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn.shopify.com/s/files/1/0065/1277/1170/files/mulher_nutricao_capilar_600x600.webp?v=1744723861" alt="">
+                <div class="card-content">
+                    <h3>nutriçao profunda</h3>
+                    <p class="preco">R$ 150,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://mealthclinic.com.br/wp-content/uploads/2024/05/led-scaled-1.webp" alt="">
+                <div class="card-content">
+                    <h3>Led Capilar </h3>
+                    <p class="preco">R$ 400,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container" id="contato">
+        <h2>contato</h2>
+        <center><p>Entre em contato pelo email</p></center>
+        <center><p>tratamentocapilar@gmail.com</p></center>
+    </section>
+
+    <footer>
+        <p>© Hair Style - Todos os direitos reservado</p>
+    </footer>
+
+</body>
+</html>
